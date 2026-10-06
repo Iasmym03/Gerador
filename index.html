@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Nomes de Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <h2 class="titulo-principal">Gerador de Fichas de Pets</h2>
+            <h3 class="titulo-secundario">Crie identidades completas e autênticas para seu pet</h3>
+        </div>
+        
+        <div class="conteudo-senha">
+            <label for="campo-senha">Ficha do Pet Gerada</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
+        </div>
+
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize as Características!</h3>
+            <div class="parametro-coluna__senha">
+                
+                
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Tamanho do Nome</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">6</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>
+
+                
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Tipo de Animal</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox" checked>
+                        <label>Cachorro</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <label>Gato</label>
+                    </div>
+                </div>
+
+                
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Porte do Pet</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox" checked>
+                        <label>Pequeno (P)</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <label>Médio (M)</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <label>Grande (G)</label>
+                    </div>
+                </div>
+
+
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Cor da Pelagem</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox" checked>
+                        <label>Preto</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <label>Branco</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <label>Caramelo</label>
+                    </div>
+                </div>
+
+                
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Gênero</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox" checked>
+                        <label>Macho</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <label>Fêmea</label>
+                    </div>
+                </div>
+
+               
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Complexidade da Ficha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-texto">
+                        <p>Simples</p>
+                        <p>Completa</p>
+                        <p>Avançada</p>
+                    </div>
+                    <button id="btn-gerar" class="parametro-senha__botao" style="width: 100%; margin-top: 20px;">Gerar Pet</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+
+:root {
+    --fundo-principal: #040d1a;   /* Azul escuro profundo para o fundo do site */
+    --fundo-card: #0b1528;        /* Azul ardósia para os blocos e containers */
+    --fundo-input: #11203b;       /* Azul médio para campos de texto e botões desativados */
+    --borda-neon: #0075ff;        /* Azul elétrico/neon para destacar as bordas */
+    --texto-claro: #ffffff;       /* Branco puro para títulos principais */
+    --texto-secundario: #8fa0b5;  /* Azul acinzentado para descrições e labels */
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
+* {
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: var(--texto-claro);
+    background-color: var(--fundo-principal);
+    font-family: var(--roboto);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='120' height='120' viewBox='0 0 120 120'><text x='15' y='40' font-size='22' opacity='0.03'>🐶</text><text x='75' y='40' font-size='22' opacity='0.03'>🐱</text><text x='45' y='95' font-size='20' opacity='0.03'>🐾</text></svg>");
+    background-repeat: repeat;
+}
+
+
+.conteudo {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--fundo-card);
+    border: 2px solid var(--borda-neon);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.conteudo-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-principal {
+    font-family: var(--roboto-mono);
+    font-size: 32px;
+    margin: 0 0 10px 0;
+    color: var(--texto-claro);
+}
+
+.titulo-secundario {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    margin: 0;
+}
+
+
+.conteudo-senha {
+    background: var(--fundo-input);
+    padding: 24px;
+    border-bottom: 6px solid var(--borda-neon);
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 40px;
+}
+
+.conteudo-senha label {
+    display: block;
+    font-size: 14px;
+    color: var(--texto-secundario);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+#campo-senha {
+    background-color: transparent;
+    border: none;
+    color: var(--texto-claro);
+    font-family: var(--roboto-mono);
+    font-size: 24px;
+    width: 100%;
+}
+
+#campo-senha:focus {
+    outline: none;
+}
+
+
+.parametro-titulo {
+    font-family: var(--roboto-mono);
+    font-size: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--fundo-input);
+    padding-bottom: 10px;
+}
+
+
+.parametro-coluna__senha {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+}
+
+.parametro-senha {
+    display: flex;
+    flex-direction: column;
+}
+
+.parametro-senha__titulo {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    margin: 0 0 15px 0;
+}
+
+
+.parametro-senha-botoes {
+    display: flex;
+    align-items: center;
+}
+
+.parametro-senha__botao {
+    background-color: var(--fundo-input);
+    color: var(--texto-claro);
+    border: 2px solid var(--borda-neon);
+    padding: 12px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.parametro-senha__botao:hover {
+    background-color: var(--borda-neon);
+}
+
+.parametro-senha__texto {
+    padding: 12px 24px;
+    border-top: 2px solid var(--borda-neon);
+    border-bottom: 2px solid var(--borda-neon);
+    margin: 0;
+    font-size: 20px;
+    background-color: var(--fundo-card);
+    min-width: 60px;
+    text-align: center;
+}
+
+
+.parametro-senha-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.parametro-senha-checkbox label {
+    font-size: 16px;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--borda-neon); 
+    cursor: pointer;
+}
+
+
+.barra {
+    background-color: var(--fundo-input);
+    height: 12px;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.forca {
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.fraca {
+    background-color: #ff4a5a; 
+    width: 33%;
+}
+
+.media {
+    background-color: #ffcc00; 
+    width: 66%;
+}
+
+.forte {
+    background-color: #00ff85; 
+    width: 100%;
+}
+
+.parametro-senha-texto {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--texto-secundario);
+    margin-bottom: 25px;
+}
+
+
+#btn-gerar {
+    grid-column: 1 / -1;
+    background-color: var(--borda-neon);
+    color: var(--texto-claro);
+    font-family: var(--roboto-mono);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#btn-gerar:hover {
+    background-color: #0056cc;
+}
+
+#btn-gerar:active {
+    transform: scale(0.98);
+}
