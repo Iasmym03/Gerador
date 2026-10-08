@@ -1,11 +1,11 @@
 
 :root {
-    --fundo-principal: #040d1a;   /* Azul escuro profundo para o fundo do site */
-    --fundo-card: #0b1528;        /* Azul ardósia para os blocos e containers */
-    --fundo-input: #11203b;       /* Azul médio para campos de texto e botões desativados */
-    --borda-neon: #0075ff;        /* Azul elétrico/neon para destacar as bordas */
+    --fundo-principal: #123f0f;   /* Azul escuro profundo para o fundo do site */
+    --fundo-card: #104726;        /* Azul ardósia para os blocos e containers */
+    --fundo-input: #0f5c3c;       /* Azul médio para campos de texto e botões desativados */
+    --borda-neon: #30c268;        /* Azul elétrico/neon para destacar as bordas */
     --texto-claro: #ffffff;       /* Branco puro para títulos principais */
-    --texto-secundario: #8fa0b5;  /* Azul acinzentado para descrições e labels */
+    --texto-secundario: #8fb5a0;  /* Azul acinzentado para descrições e labels */
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
